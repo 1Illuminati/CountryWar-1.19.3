@@ -1,0 +1,28 @@
+name: CountryWar
+version: 1.0
+main: org.countrywar.CountryWar
+api-version: 1.19
+depend: [ RedKillerLibrary ]
+authors: [ RedKiller ]
+description: CountryWar Game Plugin
+
+commands:
+  countryMove:
+    description: open country move gui
+    aliases: [ 국가이동 ]
+  setCountryTeam:
+    description: set player team
+    aliases: [ 국가팀설정 ]
+    permission: countryWar_setCountryTeam
+    permission-message: 당신은 이 명령어를 사용할 권한이 존재하지 않습니다!
+  country:
+    description: make country
+    aliases: [ 성 ]
+    permission: countryWar_country
+    permission-message: 당신은 이 명령어를 사용할 권한이 존재하지 않습니다!
+
+permissions:
+  countryWar_setCountryTeam:
+    default: op
+  countryWar_country:
+    default: op
